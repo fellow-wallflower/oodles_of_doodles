@@ -1,0 +1,43 @@
+# Veggie Surprise: Let's Get Cooking! 🥬
+
+# In need of little inspiration for a vegetable-forward meal? Welcome to Veggie Surprise! 
+
+# Run this program to randomly generate both a surprise vegetable and accompanying meal when you're not quite sure what to cook. Bon appétit!
+
+import random
+
+veggiesurprise = random.randint(1, 5)
+tadah = ""
+recipe = ""
+
+if veggiesurprise == 1:
+  tadah = "Brussels Sprouts"
+
+elif veggiesurprise == 2:
+  tadah = "Haricots Vert"
+
+elif veggiesurprise == 3:
+  tadah = "Dinosaur Kale"
+
+elif veggiesurprise == 4:
+  tadah = "Spring Greens"
+
+elif veggiesurprise == 5:
+  tadah = "Sugar Snap Peas"
+
+if tadah == "Brussels Sprouts":
+  recipe = "Pumpkin & Sage Ravioli with Roasted Brussels Sprouts"
+
+elif tadah == "Haricots Vert":
+  recipe = "Salade Niçoise"
+
+elif tadah == "Dinosaur Kale":
+  recipe = "White Bean & Kale Chili"
+
+elif tadah == "Spring Greens":
+  recipe = "Frikadeller with Spring Greens"
+
+elif tadah == "Sugar Snap Peas":
+  recipe = "Springtime Stir-Fry"
+
+print("Today you'll be using " + tadah + " to make " + recipe + "!")
